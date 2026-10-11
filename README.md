@@ -20,6 +20,12 @@ Abra **http://localhost:4173**. Para encerrar, pressione `Ctrl+C` no terminal. T
 - **Perguntas e itens:** `index.html`.
 - **Texto da mensagem:** `app.js`.
 
+## Aparência
+
+O botão no cabeçalho alterna entre os modos claro e escuro. A escolha fica salva neste navegador para as próximas visitas. Sem escolha salva, a página acompanha a preferência de cores do navegador e suas mudanças; quando essa preferência não está disponível, usa o modo escuro. O tema é aplicado antes de carregar o CSS para evitar um clarão ao abrir a página.
+
+Se o navegador bloquear o armazenamento local, a alternância continua funcionando durante a visita. Apenas a preferência de tema é salva; as respostas do formulário não são armazenadas.
+
 ## Fluxo
 
 O botão valida os campos, monta o link `wa.me` com as respostas e abre o WhatsApp em outra aba ou no aplicativo. A página mostra a conclusão e um botão para reabrir o WhatsApp caso a abertura seja bloqueada. As respostas ficam disponíveis ao escolher “Editar minhas respostas”.

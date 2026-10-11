@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f5f7fb">
+    <meta name="theme-color" content="#090d14">
     <meta name="description" content="Solicite uma visita da Kalu Limpeza Técnica. Escolha seus estofados e combine o orçamento pelo WhatsApp em poucos segundos.">
     <title>Solicite sua visita | Kalu Limpeza Técnica</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="config.js" defer></script>
     <script src="app.js" defer></script>
@@ -50,6 +51,12 @@
       <symbol id="icon-clock" viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/>
       </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>
+      </symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24">
+        <path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/>
+      </symbol>
     </svg>
 
     <header class="site-header">
@@ -57,7 +64,13 @@
         <a class="brand" href="./" aria-label="Kalu Limpeza Técnica, início">
           <img src="assets/logo-kalu.png" alt="Kalu Limpeza Técnica" width="164" height="94">
         </a>
-        <span class="header-caption"><span class="status-dot"></span>Cuidado que vai até você</span>
+        <div class="header-actions">
+          <span class="header-caption"><span class="status-dot"></span>Cuidado que vai até você</span>
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Ativar modo claro" hidden>
+            <svg class="icon" aria-hidden="true"><use id="theme-icon" href="#icon-sun"/></svg>
+            <span id="theme-label">Modo claro</span>
+          </button>
+        </div>
       </div>
     </header>
 
