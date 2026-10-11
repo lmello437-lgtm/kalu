@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="Solicite uma visita da Kalu Limpeza Técnica. Escolha seus estofados e combine o orçamento pelo WhatsApp em poucos segundos.">
+    <title>Solicite sua visita | Kalu Limpeza Técnica</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="config.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-sofa" viewBox="0 0 40 40">
+        <path d="M9 20v-6a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v6M9 19H7a3 3 0 0 0-3 3v7h32v-7a3 3 0 0 0-3-3h-2v6H9zM8 29v3m24-3v3M20 11v13"/>
+      </symbol>
+      <symbol id="icon-rug" viewBox="0 0 40 40">
+        <rect x="9" y="8" width="22" height="24" rx="2"/>
+        <path d="M13 12h14v16H13zM12 5v3m5-3v3m6-3v3m5-3v3M12 32v3m5-3v3m6-3v3m5-3v3"/>
+        <path d="m16 20 4-4 4 4-4 4z"/>
+      </symbol>
+      <symbol id="icon-bed" viewBox="0 0 40 40">
+        <path d="M6 29V11a2 2 0 0 1 2-2h24a2 2 0 0 1 2 2v18M4 25v7m32-7v7M4 27h32M6 21h28l2 4H4z"/>
+        <rect x="10" y="13" width="8" height="5" rx="1.5"/>
+        <rect x="22" y="13" width="8" height="5" rx="1.5"/>
+      </symbol>
+      <symbol id="icon-armchair" viewBox="0 0 40 40">
+        <path d="M11 21V12a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v9M11 19H8a3 3 0 0 0-3 3v8h30v-8a3 3 0 0 0-3-3h-3v6H11zM10 30v3m20-3v3"/>
+      </symbol>
+      <symbol id="icon-chair" viewBox="0 0 40 40">
+        <rect x="12" y="7" width="16" height="14" rx="3"/>
+        <path d="M12 18v7m16-7v7M9 25h22v4H9zM12 29v5m16-5v5"/>
+      </symbol>
+      <symbol id="icon-plus" viewBox="0 0 40 40">
+        <rect x="8" y="8" width="24" height="24" rx="7"/>
+        <path d="M20 14v12m-6-6h12"/>
+      </symbol>
+      <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+        <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4z"/>
+        <path d="M8.5 7.3c-.3 0-.6.2-.8.5-.6.8-.5 1.7 0 2.7 1 2.2 2.7 3.8 5 4.7 1 .4 1.8.5 2.4-.1.5-.5.7-1.2.4-1.4l-1.8-1c-.3-.2-.5-.1-.7.2l-.6.7c-1.7-.6-3-1.8-3.6-3.3l.6-.6c.2-.3.2-.5.1-.8l-.8-1.6c-.1-.2-.2-.3-.4-.3z"/>
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14m-5-5 5 5-5 5"/>
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6"/>
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/>
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./" aria-label="Kalu Limpeza Técnica, início">
+          <img src="assets/logo-kalu.png" alt="Kalu Limpeza Técnica" width="164" height="94">
+        </a>
+        <span class="header-caption"><span class="status-dot"></span>Cuidado que vai até você</span>
+      </div>
+    </header>
+
+    <main class="main-content" id="main-content">
+      <section class="request-view" id="request-view" aria-labelledby="page-title">
+        <div class="intro">
+          <span class="eyebrow">LIMPEZA TÉCNICA · NA SUA CASA</span>
+          <h1 id="page-title">Um novo cuidado<br>para o seu <span>estofado.</span></h1>
+          <p>Escolha os itens e combine sua visita pelo WhatsApp.</p>
+        </div>
+
+        <form id="lead-form" class="form-card" novalidate>
+          <fieldset class="items-fieldset" aria-describedby="items-hint items-error">
+            <legend>O que você quer higienizar?</legend>
+            <div class="fieldset-description">
+              <p id="items-hint">Pode escolher mais de um item.</p>
+              <span class="time-badge"><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>30 segundos</span>
+            </div>
+            <div class="items-grid">
+              <label class="item-option">
+                <input type="checkbox" name="items" value="Sofá">
+                <span class="item-tile"><span class="selection-mark"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span><svg class="furniture-icon" aria-hidden="true"><use href="#icon-sofa"/></svg><span>Sofá</span></span>
+              </label>
+              <label class="item-option">
+                <input type="checkbox" name="items" value="Tapete">
+                <span class="item-tile"><span class="selection-mark"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span><svg class="furniture-icon" aria-hidden="true"><use href="#icon-rug"/></svg><span>Tapete</span></span>
+              </label>
+              <label class="item-option">
+                <input type="checkbox" name="items" value="Cama / colchão">
+                <span class="item-tile"><span class="selection-mark"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span><svg class="furniture-icon" aria-hidden="true"><use href="#icon-bed"/></svg><span>Cama / colchão</span></span>
+              </label>
+              <label class="item-option">
+                <input type="checkbox" name="items" value="Poltrona">
+                <span class="item-tile"><span class="selection-mark"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span><svg class="furniture-icon" aria-hidden="true"><use href="#icon-armchair"/></svg><span>Poltrona</span></span>
+              </label>
+              <label class="item-option">
+                <input type="checkbox" name="items" value="Cadeiras">
+                <span class="item-tile"><span class="selection-mark"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span><svg class="furniture-icon" aria-hidden="true"><use href="#icon-chair"/></svg><span>Cadeiras</span></span>
+              </label>
+              <label class="item-option">
+                <input type="checkbox" name="items" value="Outro" id="other-item">
+                <span class="item-tile"><span class="selection-mark"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span><svg class="furniture-icon" aria-hidden="true"><use href="#icon-plus"/></svg><span>Outro item</span></span>
+              </label>
+            </div>
+            <p class="field-error" id="items-error" role="alert" hidden>Escolha pelo menos um item para continuar.</p>
+            <div class="field other-field" id="other-field" hidden>
+              <label for="other-description">Qual é o outro item?</label>
+              <input type="text" id="other-description" name="other-description" placeholder="Ex.: cabeceira" maxlength="100" aria-describedby="other-error" disabled>
+              <p class="field-error" id="other-error" role="alert" hidden>Conte qual é o outro item.</p>
+            </div>
+          </fieldset>
+
+          <div class="details-fields">
+            <div class="field">
+              <label for="client-name">Seu nome</label>
+              <input type="text" id="client-name" name="client-name" placeholder="Como podemos te chamar?" autocomplete="given-name" maxlength="60" required aria-describedby="name-error">
+              <p class="field-error" id="name-error" role="alert" hidden>Preencha seu nome.</p>
+            </div>
+            <div class="field">
+              <label for="client-location">Bairro e cidade</label>
+              <input type="text" id="client-location" name="client-location" placeholder="Ex.: Centro, Campo Grande" autocomplete="address-level2" maxlength="120" required aria-describedby="location-error">
+              <p class="field-error" id="location-error" role="alert" hidden>Informe seu bairro e cidade.</p>
+            </div>
+          </div>
+
+          <button type="submit" class="primary-button" id="submit-button">
+            <svg class="icon whatsapp-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+            <span>Solicitar visita pelo WhatsApp</span>
+            <svg class="icon arrow-icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+          </button>
+          <p class="form-note">Sem compromisso. A gente combina o dia com você.</p>
+          <p class="field-error" id="configuration-error" role="alert" hidden>O WhatsApp precisa ser configurado para receber seu pedido.</p>
+        </form>
+        <p class="privacy-note">Suas respostas vão direto para a nossa conversa.</p>
+      </section>
+
+      <section class="success-view" id="success-view" aria-labelledby="success-title" hidden>
+        <div class="success-symbol"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></div>
+        <span class="eyebrow">PRÓXIMO PASSO: COMBINAR A VISITA</span>
+        <h1 id="success-title" tabindex="-1">Tudo pronto<span>!</span></h1>
+        <p>Sua mensagem está pronta no WhatsApp.<br>É só tocar em <strong>enviar</strong> na conversa.</p>
+        <a class="primary-button success-link" id="whatsapp-link" href="#" target="_blank" rel="noopener noreferrer">
+          <svg class="icon whatsapp-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+          <span>Abrir WhatsApp novamente</span>
+          <svg class="icon arrow-icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+        </a>
+        <button type="button" class="text-button" id="edit-request">Editar minhas respostas</button>
+      </section>
+      <noscript><p class="noscript-message">Ative o JavaScript para preencher o formulário ou <a href="https://wa.me/5567981637566">fale com a Kalu pelo WhatsApp</a>.</p></noscript>
+    </main>
+
+    <footer class="site-footer"><span>Kalu Limpeza Técnica</span><span class="footer-dot">·</span><span>Cuidado em cada detalhe.</span></footer>
+  </body>
+</html>
