@@ -1,4 +1,4 @@
-# Kalu — solicitação de visita
+# Kalu — solicitação de orçamento
 
 Página única, responsiva e sem dependências. O formulário permite selecionar vários móveis, informar o nome e o bairro/cidade, e abrir uma mensagem pronta para o WhatsApp **+55 67 98163-7566**.
 
@@ -30,7 +30,7 @@ Se o navegador bloquear o armazenamento local, a alternância continua funcionan
 
 O botão valida os campos, monta o link `wa.me` com as respostas e abre o WhatsApp em outra aba ou no aplicativo. A página mostra a conclusão e um botão para reabrir o WhatsApp caso a abertura seja bloqueada. As respostas ficam disponíveis ao escolher “Editar minhas respostas”.
 
-**O link prepara a mensagem; o cliente precisa confirmar o envio no WhatsApp.** A conclusão não representa uma mensagem entregue nem uma visita já agendada.
+**O link prepara a mensagem; o cliente precisa confirmar o envio no WhatsApp.** A conclusão não representa uma mensagem entregue, orçamento aprovado ou visita agendada.
 
 Não há banco de dados, analytics, cookies, cadastro, fontes externas ou envio das respostas para um servidor. As respostas são usadas apenas para compor a conversa no WhatsApp. A página não guarda os dados após ser recarregada.
 

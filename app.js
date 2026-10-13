@@ -88,13 +88,11 @@
       ? `Outro: ${normalize(otherInput.value)}`
       : input.value);
     const message = [
-      `Olá, ${config.companyName || "Kalu"}! Quero solicitar um orçamento e combinar uma visita.`,
+      `Olá, ${config.companyName || "Kalu"}! Quero solicitar um orçamento.`,
       "",
       `*Nome:* ${normalize(nameInput.value)}`,
       `*Itens para higienização:* ${items.join(", ")}`,
-      `*Bairro e cidade:* ${normalize(locationInput.value)}`,
-      "",
-      "Podemos combinar um dia e horário?"
+      `*Bairro e cidade:* ${normalize(locationInput.value)}`
     ].join("\n");
     // wa.me abre o aplicativo no celular e permite continuar no WhatsApp Web no computador.
     const url = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
@@ -115,7 +113,7 @@
     successView.hidden = true;
     requestView.hidden = false;
     submitButton.disabled = false;
-    document.title = "Solicite sua visita | Kalu Limpeza Técnica";
+    document.title = "Solicite seu orçamento | Kalu Limpeza Técnica";
     nameInput.focus();
   });
 })();
